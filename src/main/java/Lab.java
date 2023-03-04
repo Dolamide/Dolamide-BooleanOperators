@@ -15,7 +15,7 @@ public class Lab {
      * @return if b is true, return true. if b is false, return false.
      */
     public boolean returnBoolean(boolean b){
-        if (b = true) {
+        if (b == true) {
             System.out.println("true");
             return true;
           }else if(b = false){
@@ -37,11 +37,11 @@ public class Lab {
         // else if(b = false){
         //     System.out.println("true");
         //   }
-        if(b = true)
-            return false;
-        else if(!b)
-            return true;
-          return true;
+        // if(b = true)
+        //     return false;
+        // else if(!b)
+        //     return !b;
+          return !b;
     }
 
     /**
@@ -71,14 +71,15 @@ public class Lab {
      * look into boolean operations to do this without using if/else statements.
      */
     public boolean returnOr(boolean b1, boolean b2){
-        if (b1 = true) {
-            System.out.println("true");
-            return true;
-          }
-        else if(b2 = true){
-            System.out.println("true");
-            return true;
-          }
+        // if (b1 | b2) {
+        //     System.out.println("true");
+        //     return true;
+        //   }
+        // else(b1 | b2){
+        //     System.out.println("false");
+        //     return false;
+        //   }
+        // *************** wrote differently but still wrong for the question*****************
         // if (b1 = false) {
         //     System.out.println("false");
         //     return false;
@@ -87,7 +88,7 @@ public class Lab {
         //     System.out.println("false");
         //     return false;
         //   }
-          return false;
+          return b1 || b2;
     }
 
 
